@@ -1,0 +1,8 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import pandas as pd
+from selenium.webdriver.chrome.options import Options
+options = Options()
+options.add_argument("start-maximized")
+from webdriver_manager.chrome import ChromeDriverManager
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
